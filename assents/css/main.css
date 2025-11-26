@@ -1,0 +1,15 @@
+main {
+    background: goldenrod;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+main section {
+    background: greenyellow;
+    display: flex;
+    flex-direction: row;
+}
