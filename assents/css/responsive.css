@@ -1,0 +1,268 @@
+/* Overrides e estilos responsivos principais */
+
+/* Forçar aparência neutra do main (sobrepõe main.css antigo) */
+main {
+  background: #ffffff;
+  margin: 0;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+main section {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+/* Container central e section-inner (substitui regras antigas) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.section-inner {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.section-inner img {
+  width: 48%;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  object-fit: contain;
+}
+
+.section-inner .text {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-inner .text h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.section-inner .text p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-inner.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Tablet (900px e abaixo) */
+@media (max-width: 1024px) {
+  main {
+    padding: 40px 16px;
+  }
+
+  .section-inner {
+    gap: 40px;
+    padding: 32px 0;
+  }
+
+  .section-inner img {
+    width: 45%;
+  }
+
+  .section-inner .text h2 {
+    font-size: 28px;
+  }
+
+  .section-inner .text p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile (768px e abaixo) */
+@media (max-width: 768px) {
+  main {
+    padding: 30px 16px;
+  }
+
+  .section-inner {
+    flex-direction: column !important;
+    gap: 24px;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .section-inner img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .section-inner .text h2 {
+    font-size: 22px;
+  }
+
+  .section-inner .text p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Mobile pequeno (480px e abaixo) */
+@media (max-width: 480px) {
+  main {
+    padding: 20px 12px;
+  }
+
+  .section-inner {
+    padding: 16px 0;
+    gap: 16px;
+  }
+
+  .section-inner .text h2 {
+    font-size: 18px;
+  }
+
+  .section-inner .text p {
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+}
+
+/* Header responsivo */
+header {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  min-height: 420px;
+}
+
+header p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.title {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.title h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.button-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.button-container button {
+  padding: 12px 28px;
+  font-size: 15px;
+  border-radius: 28px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 60px 16px;
+    min-height: 380px;
+  }
+
+  .title h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  .button-container {
+    gap: 12px;
+  }
+
+  .button-container button {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 40px 12px;
+    min-height: 320px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-container button {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+/* Footer responsivo */
+footer {
+  background: rgba(35, 39, 42, 1);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+  height: auto;
+}
+
+footer img {
+  max-width: 280px;
+  height: auto;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 24px 16px;
+  }
+
+  footer img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 16px 12px;
+  }
+
+  footer img {
+    max-width: 160px;
+  }
+}

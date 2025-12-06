@@ -1,15 +1,18 @@
 main {
-    background: goldenrod;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+    background: #ffffff;
+    margin: 0;
+    padding: 60px 20px;
+    display: block;
 }
 
 main section {
-    background: greenyellow;
-    display: flex;
-    flex-direction: row;
+    background: transparent;
+    display: block;
+    padding: 0;
+}
+
+section img {
+    width: auto;
+    height: auto;
+    margin-right: 0;
 }

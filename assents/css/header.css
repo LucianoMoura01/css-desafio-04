@@ -1,32 +1,45 @@
 .title {
     margin-bottom: 16px;
-    width: 313px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 .title h1 {
     font-family: 'Luckiest Guy', cursive;
     font-size: 56px;
     color: #ffffff;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 header {
     background: url('../image/header_img.png') no-repeat center center;
     background-size: cover;
-    width: 100vw;
-    height: 459px;
+    width: 100%;
+    height: auto;
+    min-height: 459px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color:#ffffff;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+header p {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 
 header button {
     border: none;
     border-radius: 28px;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 12px 30px;
+    margin: 8px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -36,6 +49,7 @@ header button {
     justify-content: center;
     gap: 16px;
     margin-top: 24px;
+    flex-wrap: wrap;
 }
 .button-container button:hover {
     background-color: #4752c4;
@@ -44,9 +58,11 @@ header button {
 header #download {
     background-color: #ffffff;
     color: #000000;
+    font-weight: 600;
 }
 
 header #open-browser {
     background-color: #23272A;
     color: #ffffff;
+    font-weight: 600;
 }

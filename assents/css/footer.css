@@ -2,7 +2,8 @@ footer {
     background: rgba(35, 39, 42, 1);
     color: white;
     text-align: center;
-    padding: 5px;
-    width: 100vw;
-    height: 134px;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
 }
+footer img { max-width: 220px; height: auto; }
